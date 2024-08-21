@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    font-weight: 400;
+}
+
+.header .inner {
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner .nav ul {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 100;
+    transform: translate(-50%, 0);
+}
+
+.header .inner .nav ul li {
+    margin-left: 30px;
+}
+
+.header .inner .nav_right .search {
+    width: 176px;
+    height: 30px;
+    position: relative;
+    right: 185px;
+    margin-top: 40px;
+}
+
+.header .inner .nav_right .search input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    border-radius: 40px;
+    background-color: inherit;
+    padding: 0 10px;
+    box-sizing: border-box;
+    /* 테두리가 있다면 box-sizing: border-box 추가*/
+}
+
+.header .inner .nav_right .search img {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+.header .inner .nav_right .icon li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 10px;
+    top: -30px;
+}
+
+.header .inner .nav_right .icon li img {
+    width: 25px;
+    height: 25px;
+    margin-left: 35px;
+
+}
+
+
+.main_visual {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: azure;
+}
+
+.main_visual .list01 {
+    font-size: 20px;
+    width: 100px;
+    color: black;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.main_visual .list01 {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 97px;
+    transform: translate(-50%, 0);
+}
+
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box-01 {
+    width: 1440px;
+    margin: 50px auto;
+}
+
+.box-01 .main01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-01 .main01 h1 {
+    margin-bottom: 27px;
+}
+
+.box-01 ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-01 .list02 li {
+    width: 320px;
+}
+
+.box-01 ul li img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+
+}
+
+.box-01 ul li p {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.box-01 .list02 li p {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.box-01 .list02 li h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.box-01 .list02 li h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.box-01 .list02 li h4 {
+    font-size: 22px;
+}
+
+.box-02 h1 {
+    font-size: 48px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.box-02 {
+    width: 1220px;
+    margin: 50px auto;
+}
+
+.box-02 .recommend .item_wrap01 {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px, 60px;
+    margin-bottom: 60px;
+}
+
+.box-02 .recommend .item_wrap01 .item div {
+    width: 230px;
+    height: 300px;
+    position: relative;
+}
+
+.box-02 .recommend .item_wrap01 .item div::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.box-02 .recommend .item_wrap01 .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-02 .recommend .item_wrap01 .item div a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+    color: #ffffff;
+    display: none;
+}
+
+.box-02 .recommend .item_wrap01 .item:hover div a {
+    display: block;
+}
+
+.box-02 .recommend .item_wrap01 .item div:hover::before {
+    display: block;
+}
+
+
+.box-02 .recommend .item_wrap01 .item_image {
+    width: 570px;
+    height: 570px;
+
+}
+
+.box-02 .recommend .item_wrap01 .item_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-02 .recommend .item_wrap01 .item {
+    width: 570px;
+}
+
+.box-02 .recommend .item_wrap01 .item div {
+    width: 230px;
+}
+
+.box-02 .recommend .item_wrap01 .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.box-02 .recommend .item_wrap01 .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-02 .recommend .item p {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box-02 .recommend .item h2 {
+    font-size: 22px;
+    margin-bottom: 95px;
+}
+
+.box-02 .recommend .item img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+}
+
+.box-03 {
+    width: 1440px;
+    margin: 50px auto;
+}
+
+.box-03 .main03 {
+    display: flex;
+    justify-content: space-between;
+     margin-top: 150px;
+}
+
+.box-03 .main03 h1 {
+    margin-bottom: 27px;
+    font-size: 24px;
+   
+}
+
+.box-03 .category {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box-03 .category .category_image img {
+    width: 709px;
+    height: 450px;
+    object-fit: cover;
+}
+.box-03 .category .item {
+   width: 709px;
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.box-03 .category .item a {
+    display: flex;
+}
+.box-03 .category .item p {
+font-size: 14px;
+}
+.box-03 .category .item h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.box-03 .category .item h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.box-03 .category .item img {
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.text_slide {
+    background-color: #fbcae0;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 40px;
+    margin-top: 150px;
+ 
+    white-space: nowrap;
+}
+
+.text_slide p {
+    animation-name: textslide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes textslide {
+    0% {
+        background-color: inherit;
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
